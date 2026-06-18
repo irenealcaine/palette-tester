@@ -1,0 +1,146 @@
+.demo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.input,
+.select,
+.textarea {
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, var(--color-text), transparent 70%);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: var(--color-bg);
+  color: var(--color-text);
+  outline: none;
+  transition: border-color 0.15s;
+  font-family: inherit;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--color-dark);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: color-mix(in srgb, var(--color-text), transparent 50%);
+}
+
+.select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.fieldset {
+  border: 1px solid color-mix(in srgb, var(--color-text), transparent 75%);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.legend {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  padding: 0 8px;
+}
+
+.checkGroup,
+.radioGroup {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.checkLabel,
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.checkbox,
+.radio {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-dark);
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnSecondary,
+.btnOutline {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.btnPrimary {
+  background: var(--color-dark);
+  color: var(--color-bg);
+  border-color: var(--color-dark);
+}
+
+.btnPrimary:hover {
+  opacity: 0.9;
+}
+
+.btnSecondary {
+  background: var(--color-light);
+  color: var(--color-text);
+  border-color: color-mix(in srgb, var(--color-text), transparent 70%);
+}
+
+.btnSecondary:hover {
+  border-color: var(--color-dark);
+}
+
+.btnOutline {
+  background: transparent;
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+
+.btnOutline:hover {
+  background: color-mix(in srgb, var(--color-dark), transparent 90%);
+}

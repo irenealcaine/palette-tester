@@ -1,0 +1,39 @@
+.sidebar {
+  width: 210px;
+  flex-shrink: 0;
+  background: var(--color-light);
+  border-right: 1px solid color-mix(in srgb, var(--color-text), transparent 82%);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.heading {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--color-text), transparent 82%);
+  }
+}

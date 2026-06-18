@@ -1,0 +1,43 @@
+.selector {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.presetBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid color-mix(in srgb, var(--color-text), transparent 78%);
+  border-radius: 8px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.presetBtn:hover {
+  border-color: var(--color-dark);
+  background: color-mix(in srgb, var(--color-bg), var(--color-dark) 6%);
+}
+
+.swatches {
+  display: flex;
+  gap: 3px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid color-mix(in srgb, var(--color-text), transparent 80%);
+}

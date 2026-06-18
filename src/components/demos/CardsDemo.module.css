@@ -1,0 +1,51 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  background: var(--color-light);
+  color: var(--color-text);
+  border: 1px solid color-mix(in srgb, var(--color-text), transparent 82%);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--color-dark);
+  color: var(--color-bg);
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 4px 0 0;
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.body {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 4px 0 0;
+  color: var(--color-text);
+}

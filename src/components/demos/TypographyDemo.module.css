@@ -1,0 +1,107 @@
+.demo h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: var(--color-text);
+  letter-spacing: -0.03em;
+}
+
+.demo h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 24px 0 6px;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+.demo h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 20px 0 4px;
+  color: var(--color-text);
+}
+
+.demo h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 16px 0 4px;
+  color: var(--color-text);
+}
+
+.demo p {
+  margin: 12px 0;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.demo a {
+  color: var(--color-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: opacity 0.15s;
+}
+
+.demo a:hover {
+  opacity: 0.75;
+}
+
+.demo strong {
+  font-weight: 700;
+}
+
+.demo em {
+  font-style: italic;
+}
+
+.demo code {
+  font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.875em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+.codeBlock {
+  margin: 16px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--color-text), transparent 80%);
+}
+
+.codeBlock pre {
+  margin: 0;
+  padding: 16px;
+  background: var(--color-light);
+  color: var(--color-text);
+  font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+.blockquote {
+  margin: 20px 0;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: var(--color-light);
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.6;
+  border-left: 4px solid var(--color-dark);
+}
+
+.blockquote cite {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  font-style: normal;
+}

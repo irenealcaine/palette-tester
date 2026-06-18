@@ -1,0 +1,85 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: var(--color-bg);
+  border: 1px solid color-mix(in srgb, var(--color-text), transparent 80%);
+  margin-bottom: 6px;
+}
+
+.label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-dark);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid color-mix(in srgb, var(--color-text), transparent 75%);
+  cursor: pointer;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.picker {
+  position: absolute;
+  inset: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hexInput {
+  width: 100%;
+  padding: 3px 6px;
+  border: 1px solid color-mix(in srgb, var(--color-text), transparent 80%);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
+  font-size: 0.72rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.hexInput:focus {
+  border-color: var(--color-dark);
+}
+
+.swapBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  margin-top: 4px;
+  padding: 7px 10px;
+  border: 1px solid color-mix(in srgb, var(--color-text), transparent 72%);
+  border-radius: 6px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.swapBtn:hover {
+  border-color: var(--color-dark);
+  background: color-mix(in srgb, var(--color-bg), var(--color-dark) 6%);
+}
