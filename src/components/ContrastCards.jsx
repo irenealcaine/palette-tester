@@ -30,11 +30,11 @@ function contrastRatio(a, b) {
 
 const PAIRS = [
   { fg: 'text', bg: 'bg', label: 'Texto sobre fondo' },
-  { fg: 'text', bg: 'light', label: 'Texto sobre claro' },
-  { fg: 'bg', bg: 'dark', label: 'Fondo sobre oscuro' },
-  { fg: 'dark', bg: 'bg', label: 'Oscuro sobre fondo' },
-  { fg: 'dark', bg: 'light', label: 'Oscuro sobre claro' },
-  { fg: 'text', bg: 'dark', label: 'Texto sobre oscuro' },
+  { fg: 'text', bg: 'light', label: 'Texto sobre color 1' },
+  { fg: 'bg', bg: 'dark', label: 'Fondo sobre color 2' },
+  { fg: 'dark', bg: 'bg', label: 'Color 2 sobre fondo' },
+  { fg: 'dark', bg: 'light', label: 'Color 2 sobre color 1' },
+  { fg: 'text', bg: 'dark', label: 'Texto sobre color 2' },
 ];
 
 export default function ContrastCards() {
